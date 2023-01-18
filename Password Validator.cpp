@@ -32,21 +32,6 @@ void checkPassword(char password_in[passwordMaxLength], bool & upper, bool & low
 	}
 }
 
-int checkLength(char password_in[passwordMaxLength])
-{
-	int charNumber = 0;
-	
-	for(int count = 0; count < passwordMaxLength; count++)
-	{
-		if(password_in[count] != ' ')
-		{
-			charNumber += 1;
-		}
-	}
-	
-	return charNumber;
-}
-
 int main()
 {
 	
